@@ -1,0 +1,37 @@
+To install mongoDb
+
+1) Install mongoDb
+2) ADD it to PATH environment variables
+3) Create mongoData storage folder. eg C:\>md data and then C:\> md data\db
+4) Start mongod --dbpath C:\data\db;
+5) Start mongo --shell
+For more Information about configuration on mongoDb, refer here
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+To create database in mongoDb
+1) Create a database
+use  employeedb;
+2) Create a collection
+db.createCollection("employees");
+3) Document insertion
+db.employees.insert(
+    {
+        
+        "Name": "Ankur Sharma",
+        "Email": "Ankur@asd.net",
+        "Date_of_birth": "1993-12-25",
+        "Department": "Web",
+        "Gender": "Female",
+        "Age": 22
+    },
+	{
+        
+        "Name": "ajay",
+        "Email": "ajayabc@asd.net",
+        "Date_of_birth": "2015-12-02",
+        "Department": "web",
+        "Gender": "Male",
+        "Age": 1
+    }
+)
+
